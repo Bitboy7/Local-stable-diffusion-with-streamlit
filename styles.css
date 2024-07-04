@@ -1,0 +1,86 @@
+:root {
+    --primary-color: #1c31a5;
+    --secondary-color: #101f78;
+    --background-color: #fafafa;
+    --accent-color: #010937;
+    --light: #ecedff;
+}
+
+* {
+    font-family: "Poppins";
+    font-size: 1em;
+    background-image: url(static/bg.jpg);
+}
+
+div[data-testid="stAppViewBlockContainer"] {
+    padding-top: 0px;
+}
+
+div.iconMetric {
+    padding: 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+div[data-testid="stAppViewBlockContainer"] div[data-testid="stVerticalBlockBorderWrapper"] div[data-testid="stVerticalBlockBorderWrapper"],
+div[data-testid="stVerticalBlockBorderWrapper"] div[data-testid="stHorizontalBlock"] div[data-testid="column"] div[data-testid="stVerticalBlockBorderWrapper"] {
+    background-color: var(--background-color);
+    padding: 10px;
+    border-radius: 15px;
+    font-weight: bolder;
+    box-shadow: 0px 0px 10px rgba(81, 85, 195, 0.2);
+}
+
+h1,
+h3,
+label[data-testid="stMetricLabel"] p {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+div[data-testid="stMetricValue"] {
+    font-size: 3em;
+}
+
+.dashboardTable {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    width: 100%;
+}
+
+.dashboardTable thead tr {
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+    text-align: left;
+}
+
+.dashboardTable th,
+.dashboardTable td {
+    border: none;
+}
+
+.dashboardTable tbody tr {
+    border-bottom: 1px solid var(--light);
+    background-color: var(--background-color);
+}
+
+.dashboardTable tbody tr:nth-of-type(even) {
+    background-color: var(--background-color);
+}
+
+div[data-testid="stHorizontalBlock"]:nth-child(1) div[data-testid="column"]>div {
+    box-shadow: none !important;
+}
+
+#root > div:nth-child(1) > div.withScreencast > div > div > div > section > div.block-container.st-emotion-cache-z5fcl4.ea3mdgi5 > div > div > div > div:nth-child(8) > div.st-emotion-cache-12w0qpk.e1f1d6gn3 > div,
+#root > div:nth-child(1) > div.withScreencast > div > div > div > section > div.block-container.st-emotion-cache-z5fcl4.ea3mdgi5 > div > div > div > div:nth-child(7) > div:nth-child(1) > div,
+#root > div:nth-child(1) > div.withScreencast > div > div > div > section > div.block-container.st-emotion-cache-z5fcl4.ea3mdgi5 > div > div > div > div:nth-child(6) > div.st-emotion-cache-12w0qpk.e1f1d6gn3 > div {
+    box-shadow: none;
+    background-color: var(--accent-color);
+}
+
+#root > div:nth-child(1) > div.withScreencast > div > div > div > section > div.block-container.st-emotion-cache-z5fcl4.ea3mdgi5 > div > div > div > div:nth-child(7) > div:nth-child(1) > div div {
+    background-color: var(--accent-color);
+}
