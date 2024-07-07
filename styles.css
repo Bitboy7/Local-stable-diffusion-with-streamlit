@@ -1,7 +1,7 @@
 :root {
     --primary-color: #1c31a5;
     --secondary-color: #101f78;
-    --background-color: #fafafa;
+    --background-color: #3f3f3f;
     --accent-color: #010937;
     --light: #ecedff;
 }
@@ -10,6 +10,10 @@
     font-family: "Poppins";
     font-size: 1em;
     background-image: url(static/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: var(---background-color);
 }
 
 div[data-testid="stAppViewBlockContainer"] {
@@ -20,6 +24,17 @@ div.iconMetric {
     padding: 10px;
     border-radius: 10px;
     box-sizing: border-box;
+}
+
+.card-body {
+    background-color: var(--background-color);
+    font-weight: bolder;
+    padding: auto;
+}
+
+.card-body a{
+    color: white;
+
 }
 
 div[data-testid="stAppViewBlockContainer"] div[data-testid="stVerticalBlockBorderWrapper"] div[data-testid="stVerticalBlockBorderWrapper"],
@@ -35,30 +50,26 @@ h1,
 h3,
 label[data-testid="stMetricLabel"] p {
     font-weight: bold;
-    color: var(--primary-color);
+    color: var(--light);
 }
 
 div[data-testid="stMetricValue"] {
     font-size: 3em;
 }
 
-.dashboardTable {
-    border-collapse: collapse;
-    margin: 25px 0;
-    font-size: 0.9em;
-    font-family: sans-serif;
-    width: 100%;
-}
 
 .dashboardTable thead tr {
     background-color: var(--accent-color);
     color: var(--secondary-color);
     text-align: left;
+    font-weight: bold;
 }
 
 .dashboardTable th,
 .dashboardTable td {
     border: none;
+    padding: 12px 15px;
+    text-align: left;
 }
 
 .dashboardTable tbody tr {
